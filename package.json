@@ -1,0 +1,22 @@
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "description": "demo vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevsaj/Vue-demo.git"
+  },
+  "author": "kevsaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevsaj/Vue-demo/issues"
+  },
+  "homepage": "https://github.com/kevsaj/Vue-demo#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
