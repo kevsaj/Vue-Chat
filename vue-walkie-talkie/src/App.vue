@@ -24,5 +24,10 @@ export default {
 </script>
 
 <style>
-
+header {
+  text-align: center;
+}
+button, input {
+  margin-bottom: 10px;
+}
 </style>

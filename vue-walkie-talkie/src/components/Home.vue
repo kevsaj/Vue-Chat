@@ -15,3 +15,13 @@ export default ({
     }
 })
 </script>
+
+<style>
+div {
+  text-align: center;
+  margin-top: 30px;
+}
+button, input {
+  margin-bottom: 10px;
+}
+</style>

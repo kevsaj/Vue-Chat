@@ -1,7 +1,7 @@
 <template>
     <aside>
         <h3>Sign in Anonymously</h3>
-        <button @click="auth.signInAnonymously()">Sign In</button>
+        <button @click="auth.signInAnonymously()" class="button is-dark">Sign In</button>
     </aside>
 </template>
 
@@ -16,3 +16,14 @@ export default ({
     },
 })
 </script>
+
+<style>
+aside {
+  text-align: center;
+  margin-top: 50px;
+}
+button, input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+</style>
