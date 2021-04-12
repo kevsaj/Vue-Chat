@@ -4,6 +4,8 @@
       <h1>Vue-Telephone</h1>
       <p>Realtime Voice App on Vue and Firebase</p>
     </header>
+
+    <router-view></router-view>
   </div>
 </template>
 
