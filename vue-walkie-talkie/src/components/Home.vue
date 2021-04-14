@@ -2,7 +2,14 @@
     <div>
         <h3>Home</h3>
 
-        <Login />
+        <User v-slot:user="{ user }">
+
+          <div v-if="user">
+              Welcome {{ user.uid }}!
+          </div>
+          <Login v-else />
+
+        </User>
     </div>
 </template>
 
