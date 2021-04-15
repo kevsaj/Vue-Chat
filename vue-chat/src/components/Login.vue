@@ -17,7 +17,7 @@
         <input v-model="email" placeholder="email" type="email" class="input">
 
         <label for="password">Password</label><br />
-        <input v-model="password" type="password" class="input">
+        <input v-model="password" placeholder="password"  type="password" class="input">
 
         <br />
 
