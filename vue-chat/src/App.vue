@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-pink-300">
     <header>
       <h1>Vue-Telephone</h1>
       <p>Realtime Voice App on Vue and Firebase</p>
