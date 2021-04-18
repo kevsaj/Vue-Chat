@@ -3,13 +3,15 @@
         <h3>Welcome to ChatRoom {{ chatId }}</h3>
 
         <User #user="{ user }">
-            <div v-if="user">
+            <div v-if="user" class="bg-yellow-300">
                 <ul>
                     <li v-for="message of messages" :key="message.id">
-                        {{ message.text }}
+                        <ChatMessage 
+                            :message="message"
+                            :owner="user.uid === message.sender" />
                     </li>
                 </ul>
-
+                <h1> Message </h1>
                 <input v-model="newMessageText" class="input" />
 
                 <button
@@ -30,14 +32,16 @@
 
 <script>
 
-import User from './User'
+import User from './User';
+import ChatMessage from './ChatMessage';
 import Login from './Login.vue';
 import { db } from '../firebase';
 
 export default ({
     components: {
         User,
-        Login
+        Login,
+        ChatMessage
     },
     data() {
         return {
@@ -79,3 +83,21 @@ export default ({
     }
 })
 </script>
+
+<style scoped>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    background: #efefef;
+    padding: 10px;
+    border-radius: 0;
+}
+
+li {
+    display: flex;
+}
+</style>
