@@ -3,7 +3,7 @@
         <h3>Welcome to ChatRoom {{ chatId }}</h3>
 
         <User #user="{ user }">
-            <div v-if="user" class="bg-yellow-300">
+            <div v-if="user" class="bg-yellow-300 px-20">
                 <ul>
                     <li v-for="message of messages" :key="message.id">
                         <ChatMessage 
@@ -11,7 +11,6 @@
                             :owner="user.uid === message.sender" />
                     </li>
                 </ul>
-                <h1> Message </h1>
                 <input v-model="newMessageText" class="input" />
 
                 <button
